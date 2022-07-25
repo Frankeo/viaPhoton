@@ -1,4 +1,8 @@
-export const computeX = (D: number, F: number, N: number, C: number) => N /((C - 2 * F) * D);
+export const computeX = (D: number, F: number, N: number, C: number) => { 
+  const cantTrip = Math.ceil(N / C);
+  const rounds = cantTrip % 2 ? 1 : 2;
+  return N - (rounds * F * D);
+};
 
 export const isValid = (value: string) => {
   const num = parseFloat(value);
