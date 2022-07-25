@@ -9,5 +9,3 @@ export const isValid = (value: string) => {
   const num = parseFloat(value);
   return (!isNaN(num) && num > 0);
 }
-
-export const isValidFandCValues = (c: number, f: number) => c > 2 * f;
