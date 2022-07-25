@@ -18,8 +18,8 @@ npm test
 
 ### Tools
 
-- [Typescript](https://www.typescriptlang.org/)
-- [EsLint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [Jest](https://jestjs.io/)
-- [Husky](https://typicode.github.io/husky/)
+-   [Typescript](https://www.typescriptlang.org/)
+-   [EsLint](https://eslint.org/)
+-   [Prettier](https://prettier.io/)
+-   [Jest](https://jestjs.io/)
+-   [Husky](https://typicode.github.io/husky/)
