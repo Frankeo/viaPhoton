@@ -1,6 +1,6 @@
 export const computeX = (D: number, F: number, N: number, C: number) => { 
   const cantTrip = Math.ceil(N / C);
-  const rounds = cantTrip % 2 ? 1 : 2;
+  const rounds = cantTrip % 2 ? cantTrip + 2 : cantTrip + 1;
   return N - (rounds * F * D);
 };
 

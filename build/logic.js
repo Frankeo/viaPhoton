@@ -1,7 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isValidFandCValues = exports.isValid = exports.computeX = void 0;
-const computeX = (D, F, N, C) => N / ((C - 2 * F) * D);
+const computeX = (D, F, N, C) => {
+    const cantTrip = Math.ceil(N / C);
+    const rounds = cantTrip % 2 ? cantTrip + 2 : cantTrip + 1;
+    return N - (rounds * F * D);
+};
 exports.computeX = computeX;
 const isValid = (value) => {
     const num = parseFloat(value);
